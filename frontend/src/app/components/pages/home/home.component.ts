@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { BookService } from 'src/app/services/book.service';
 import { Book } from 'src/app/shared/models/Book';
+import { Category } from './../../../shared/models/Category';
 
 @Component({
   selector: 'app-home',
@@ -15,6 +16,10 @@ export class HomeComponent implements OnInit {
     activatedRoute.params.subscribe((params) => {
       if(params.searchTerm){
         this.books=this.bookService.getAllBooksBySearchTerm(params.searchTerm)
+      }
+      else if(params.category)
+      {
+        this.books=bookService.getAllBooksByCategory(params.category);
       }
       else
       {
