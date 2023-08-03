@@ -5,7 +5,7 @@ export const sample_books: Book[]=[
         name: "Đi vòng quanh thế giới vẫn quanh 1 người",
         price: 10,
         favorite:true,
-        categories: ['vanhoc'],
+        categories: ['Văn học'],
         decription: "sách Đi vòng quanh thế giới vẫn quanh 1 người",
         imageUrl:"assets/divongquanhtgvanquanh1nguoi.jpg"
     },
@@ -14,7 +14,7 @@ export const sample_books: Book[]=[
         name: "Có 2 con mèo ngồi bên cửa sổ",
         price: 6,
         favorite:true,
-        categories: ['vanhoc'],
+        categories: ['Văn học'],
         decription: "sách Có 2 con mèo ngồi bên cửa sổ",
         imageUrl:'assets/cohaiconmeongoibencuaso.jpg'
     },
@@ -23,7 +23,7 @@ export const sample_books: Book[]=[
         name: "Lạc giữa tần số không người nghe",
         price: 12,
         favorite:true,
-        categories: ['tamli'],
+        categories: ['Tâm lí'],
         decription: "sách Lạc giữa tần số không người nghe",
         imageUrl:'assets/lacgiuatansokhongnguoinghe.jpg'
     },
@@ -32,7 +32,7 @@ export const sample_books: Book[]=[
         name: "Mẹ làm gì có ước mơ",
         price: 11,
         favorite:true,
-        categories: ['vanhoc'],
+        categories: ['Văn học'],
         decription: "sách Mẹ làm gì có ước mơ",
         imageUrl:'assets/melamgicouocmo.jpg'
     },
@@ -41,7 +41,7 @@ export const sample_books: Book[]=[
         name: "Ngày đó mèo đến bên tôi",
         price: 5,
         favorite:false,
-        categories: ['vanhoc'],
+        categories: ['Văn học'],
         decription: "sách Ngày đó mèo đến bên tôi",
         imageUrl:'assets/ngaydomeodenbentoi.jpg'
     },
@@ -50,7 +50,7 @@ export const sample_books: Book[]=[
         name: "Tấm vé tuổi thơ",
         price: 7,
         favorite:true,
-        categories: ['vanhoc'],
+        categories: ['Văn học'],
         decription: "sách Tấm vé tuổi thơ",
         imageUrl:'assets/tamvetuoitho.jpg'
     },
@@ -59,7 +59,7 @@ export const sample_books: Book[]=[
         name: "Tôi thấy hoa vàng trên đồng cỏ xanh",
         price: 8,
         favorite:true,
-        categories: ['vanhoc'],
+        categories: ['Văn học'],
         decription: "Sách tôi thấy hoa vàng trên đồng cỏ xanh",
         imageUrl:'assets/toithayhoavangtrendongcoxanh.jpg'
     },

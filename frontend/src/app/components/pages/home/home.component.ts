@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { BookService } from 'src/app/services/book.service';
 import { Book } from 'src/app/shared/models/Book';
 
@@ -10,8 +11,16 @@ import { Book } from 'src/app/shared/models/Book';
 export class HomeComponent implements OnInit {
 
   books: Book[] = [];
-  constructor(private bookService: BookService){
-    this.books=bookService.getAll();
+  constructor(private bookService: BookService, activatedRoute:ActivatedRoute){
+    activatedRoute.params.subscribe((params) => {
+      if(params.searchTerm){
+        this.books=this.bookService.getAllBooksBySearchTerm(params.searchTerm)
+      }
+      else
+      {
+        this.books=bookService.getAll();
+      }
+    })
   }
 
   ngOnInit(): void {
