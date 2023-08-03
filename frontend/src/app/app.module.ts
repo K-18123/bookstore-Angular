@@ -8,6 +8,7 @@ import { HomeComponent } from './components/pages/home/home.component';
 import { SearchComponent } from './components/partials/search/search.component';
 import { CategoriesComponent } from './components/partials/categories/categories.component';
 import { BookPageComponent } from './components/pages/book-page/book-page.component';
+import { CartPageComponent } from './components/pages/cart-page/cart-page.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,7 +16,8 @@ import { BookPageComponent } from './components/pages/book-page/book-page.compon
     HomeComponent,
     SearchComponent,
     CategoriesComponent,
-    BookPageComponent
+    BookPageComponent,
+    CartPageComponent
   ],
   imports: [
     BrowserModule,
