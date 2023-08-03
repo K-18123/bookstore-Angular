@@ -1,0 +1,27 @@
+<ul>
+    <li *ngFor="let book of books">
+        <a routerLink="/book/{{book.id}}">
+            <img [src]="book.imageUrl" [alt]="book.name">
+            <div class="content">
+                <div class="name">
+                    {{book.name}}
+                </div>
+                <span class="favorite {{book.favorite?'':'not'}}">
+                    ❤
+                </span>
+                <div class="product-item-footer">
+                    <div class="origins">
+                        <span *ngFor="let category of book.categories">
+                            {{category}}
+                        </span>
+                    </div>
+                    <div class="price">
+                        <span >
+                            {{book.price | currency}}
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+</ul>
