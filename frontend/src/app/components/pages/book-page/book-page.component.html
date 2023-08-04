@@ -1,4 +1,10 @@
-<div class="container">
+<app-not-found
+  [visible]="!book.id"
+  notFoundMessage="Food Not Found"
+  resetLinkText="Back To Homepage">
+</app-not-found>
+<div *ngIf="book.id">
+  <div  class="container">
     <img [src]="book.imageUrl" [alt]="book.name">
 
     <div class="details">
@@ -20,8 +26,10 @@
         </div>
         <button (click)="addToCart()">Add To Cart</button>
     </div>
+    
 </div>
 <div class="decription">
-<h4>Thông tin:</h4>
-{{book.decription}}
+  <h4>Mô tả:</h4>
+  {{book.decription}}
+</div>
 </div>

@@ -10,6 +10,7 @@ import { CategoriesComponent } from './components/partials/categories/categories
 import { BookPageComponent } from './components/pages/book-page/book-page.component';
 import { CartPageComponent } from './components/pages/cart-page/cart-page.component';
 import { TitleComponent } from './components/partials/title/title.component';
+import { NotFoundComponent } from './components/partials/not-found/not-found.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +20,8 @@ import { TitleComponent } from './components/partials/title/title.component';
     CategoriesComponent,
     BookPageComponent,
     CartPageComponent,
-    TitleComponent
+    TitleComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
