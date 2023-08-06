@@ -10,7 +10,9 @@ import { BookService } from 'src/app/services/book.service';
 export class CategoriesComponent implements OnInit {
   categories?:Category[];
   constructor(bookService:BookService){
-    this.categories=bookService.getAllCategories();
+    bookService.getAllCategories().subscribe(serverCategories =>{
+      this.categories = serverCategories;
+    });
   }
   ngOnInit(): void {
     

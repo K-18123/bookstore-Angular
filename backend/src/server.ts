@@ -1,7 +1,7 @@
 import express from "express";
 import cors from "cors"
 import { sample_books, sample_categories } from "./data";
-import { Category } from './../../frontend/src/app/shared/models/Category';
+
 
 const app= express();
 app.use(cors({
@@ -16,7 +16,7 @@ app.get("/api/books", (req, res) => {
 app.get("/api/books/search/:searchTerm", (req, res) => {
     const searchTerm  = req.params.searchTerm;
     const books = sample_books.filter(book => book.name.toLowerCase().includes(searchTerm.toLowerCase()));
-    res.send(books)
+    res.send(books);
   })
 
 app.get("/api/books/categories", (req, res) => {

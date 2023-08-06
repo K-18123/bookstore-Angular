@@ -16,7 +16,9 @@ export class BookPageComponent implements OnInit {
     private cartService:CartService, private router: Router){
     activatedRoute.params.subscribe((params) => {
       if(params.id)
-      this.book = bookService.getBookById(params.id)
+      bookService.getBookById(params.id).subscribe(serverBook => {
+        this.book=serverBook;
+      });
       
     })
   }
