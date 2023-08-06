@@ -11,7 +11,7 @@
     flex-direction: column;
     flex:3 0;
     justify-content: space-evenly;
-    border: 1px solid #b8e5a6;
+    border: 1px solid #4771ca;
     border-radius: 1rem;
     list-style: none;
     margin: 0.5rem;
@@ -58,7 +58,7 @@
     border-radius: 1rem;
     border: none;
     padding: 0.5rem;
-    color: #b8e5a6;
+    color: #4771ca;
     opacity: 0.7;
     outline: none;
   }
@@ -75,7 +75,7 @@
     align-items: center;
     flex:1 3;
     height: 20rem;
-    border: 1px solid #b8e5a6;
+    border: 1px solid #4771ca;
     border-radius: 1rem;
     padding: 0.5rem;
     margin: 0.5rem;
@@ -108,7 +108,7 @@
   .checkout a{
     padding: 1rem;
     color: white;
-    background:#b8e5a6;
+    background:#4771ca;
     display: block;
     width: 99%;
     border-radius: 1rem;
