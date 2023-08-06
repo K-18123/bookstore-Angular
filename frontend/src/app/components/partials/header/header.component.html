@@ -3,20 +3,20 @@
         <a routerLink="/" class="logo">LEAF STORE</a>
         <nav>
             <ul>
-                <li>
-                    <a routerLink="/login">Login</a>
+                <li *ngIf="!isAuth">
+                    <a routerLink="/login-page" >Login</a>
                 </li>
-                <li class="menu-container">
-                    <a routerLink="/dashboard">user</a>
+                <li *ngIf="isAuth" class="menu-container">
+                    <a routerLink="/dashboard">{{user.name}}</a>
                     <div class="menu">
                         <a routerLink="/profile">Profile</a>
                         <a routerLink="/orders">Orders</a>
-                        <a>Logout</a>
+                        <a (click)="logout()">Logout</a>
                     </div>
                 </li>
                 <li>
                     <a routerLink="/cart-page">
-                        Cart <span>3</span>
+                      Cart <span *ngIf="cartQuantity">{{cartQuantity}}</span>
                     </a>
                 </li>
             </ul>

@@ -70,3 +70,23 @@ export const sample_categories: any[] = [
     {name: 'Tâm lí',count: 1},
     {name: 'Khoa học', count: 0}
 ]
+
+export const sample_users: any[] = [
+    {
+        name: "Nguyễn Bảo Khang",
+        email:"nguyenkhang181203@gmail.com",
+        password:"123123",
+        address: "BT",
+        isAdmin: true
+    },
+
+    {
+        name: 'Will',
+        email:"will@gmail.com",
+        password:"123123",
+        address: "Fr",
+        isAdmin: false
+    },
+
+];
+
