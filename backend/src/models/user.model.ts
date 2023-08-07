@@ -1,17 +1,16 @@
-import { Schema , model,Types} from "mongoose";
+import { Schema , model} from "mongoose";
 
 
 export interface User{
-    id: string;
-    email: string;
-    password:string;
-    name: string;
-    address: string;
-    isAdmin: boolean;
+    id:string;
+    email:string;
+    password: string;
+    name:string;
+    address:string;
+    isAdmin:boolean;
 }
 
 export const UserSchema = new Schema<User>({
-
     name: {type: String, required: true},
     email: {type: String, required: true, unique: true},
     password: {type: String, required: true},
@@ -26,4 +25,5 @@ export const UserSchema = new Schema<User>({
         virtuals: true
     }
 });
+
 export const UserModel = model<User>('user', UserSchema);
