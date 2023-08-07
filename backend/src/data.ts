@@ -1,7 +1,7 @@
 
 export const sample_books: any[]=[
     {
-        id: '0',
+        id: '1',
         name: "Đi vòng quanh thế giới vẫn quanh 1 người",
         price: 10,
         favorite:true,
@@ -10,7 +10,7 @@ export const sample_books: any[]=[
         imageUrl:"assets/divongquanhtgvanquanh1nguoi.jpg"
     },
     {
-        id: '1',
+        id: '2',
         name: "Có 2 con mèo ngồi bên cửa sổ",
         price: 6,
         favorite:true,
@@ -19,7 +19,7 @@ export const sample_books: any[]=[
         imageUrl:'assets/cohaiconmeongoibencuaso.jpg'
     },
     {
-        id: '2',
+        id: '3',
         name: "Lạc giữa tần số không người nghe",
         price: 12,
         favorite:true,
@@ -28,7 +28,7 @@ export const sample_books: any[]=[
         imageUrl:'assets/lacgiuatansokhongnguoinghe.jpg'
     },
     {
-        id: '3',
+        id: '4',
         name: "Mẹ làm gì có ước mơ",
         price: 11,
         favorite:true,
@@ -37,7 +37,7 @@ export const sample_books: any[]=[
         imageUrl:'assets/melamgicouocmo.jpg'
     },
     {
-        id: '4',
+        id: '5',
         name: "Ngày đó mèo đến bên tôi",
         price: 5,
         favorite:false,
@@ -46,7 +46,7 @@ export const sample_books: any[]=[
         imageUrl:'assets/ngaydomeodenbentoi.jpg'
     },
     {
-        id: '5',
+        id: '6',
         name: "Tấm vé tuổi thơ",
         price: 7,
         favorite:true,
@@ -55,7 +55,7 @@ export const sample_books: any[]=[
         imageUrl:'assets/tamvetuoitho.jpg'
     },
     {
-        id: '6',
+        id: '7',
         name: "Tôi thấy hoa vàng trên đồng cỏ xanh",
         price: 8,
         favorite:true,

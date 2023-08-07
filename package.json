@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "mongodb": "^5.7.0",
     "ng-starrating": "^1.0.20"
   }
 }
